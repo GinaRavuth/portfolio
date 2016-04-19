@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RSI Hackathon</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GinaRavuth</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Yellowtail:400,300,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div id="svg">
+<a href="index.html" title="my homepage">
+<svg height="55" width="200">
+  <text x="25" y="50" style="font-family: Century Gothic;font-weight:bold;font-size:50; fill :#333;">G R</text>
+</svg></a>
+</div>
+<div id="content" class="container-fluid col-md-12">
+<h2 style="text-align: center;">rural sourcing inc. hackathon competition</h2><br>
+<hr width="120" style="margin:0 auto;">
+	<div id="capstone-info" class="col-sm-12">
+		<h2 style="text-align: center;">competition details</h2>
+		<p class="p-width">Rural Sourcing, Inc. (RSI) is the leader in domestic sourcing, a cost-effective alternative to offshoring for technology development and the ongoing support and maintenance for critical business applications (as said on company overview on facebook). RSI is located in Augusta, GA and holds a hackathon competition every year in October. The competition requires a group of students or individual to develop a website or system for RSI's company of choice within a 4 hour time period. RSI provides all content for the competition. The rest is up to the groups to develop. Universities from all over South Georgia were able to compete. <br> <a href="https://www.ruralsourcing.com/">Rural Sourcing Inc.</a> </p>	
+<br>
+		<h2 style="text-align: center;">my experience</h2>
+		<p class="p-width">My group included me, my friend Travis Crowe and my sister Renita Ravuth. Travis and I had the role of front-end developers while Renita was designer. We managed to finish five pages within the four hour time period. Let's just say those four hours were intense. We focused on making sure our site functioned properly and the design was intriguing. We used HTML/CSS and the Bootstrap framework. At the end of the four hours, each group was to present their developed site.<br><br> My group placed 3rd place out of 12 and were one of Georgia Southern's first group to place. </p>	
+	</div>
+	<a href="https://github.com/GinaRavuth/hackathon" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+	<div id="capstone-img" class="row">
+		<div class="col-sm-6 port-image">
+			<img src="images/rsi1.png"/>
+		</div>
+		<div class="col-sm-6 port-image">
+			<img src="images/rsi2.png"/>
+		</div>
+	</div>
+	<div id="capstone-img" class="row">
+		<div class="col-sm-6 port-image">
+			<img src="images/rsi3.png"/>
+		</div>
+		<div class="col-sm-6 port-image">
+			<img src="images/rsi4.png"/>
+		</div>
+	</div>
+
+<br><br>
+<a href="test.html" class="link button-style" style="display: table;margin:auto;">Return to Portfolio Work</a>
+</div>
+<script>
+$(document).ready(function() {
+
+$('body').css('display', 'none');
+
+$('body').fadeIn(1000);
+
+
+
+$('.link').click(function(event) {
+
+event.preventDefault();
+
+newLocation = this.href;
+
+$('body').fadeOut(1000, newpage);
+
+});
+
+
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});
+
+</script>
+</body>
+</html>

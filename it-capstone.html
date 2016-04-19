@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>IT Capstone Project</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GinaRavuth</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Yellowtail:400,300,700' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<div id="svg">
+<a href="index.html" title="my homepage">
+<svg height="55" width="200">
+  <text x="25" y="50" style="font-family: Century Gothic;font-weight:bold;font-size:50; fill :#333;">G R</text>
+</svg></a>
+</div>
+<div id="content" class="container-fluid col-md-12">
+<h2 style="text-align: center;">it capstone project</h2><br>
+<hr width="120" style="margin:0 auto;">
+	<div id="capstone-info" class="col-sm-12">
+		<h2 style="text-align: center;">project idea</h2>
+		<p class="p-width">A group of three and I had the idea of making a hardware inventory system for our university's Information Technology department. This inventory system is focused on one room, 2208, in the Information Technology building. The system includes all the hardware in room 2208 such as TVs, monitors, workstations, routers and much more. Students will be able to see the status, description, type and location of items. In this case, a checkout process will be used to checkout and return hardware items. We called this system Ordino, which is latin for "order".</p>	
+	</div>
+	<div id="capstone-img" class="row">
+		<div class="col-sm-6 port-image">
+			<img src="images/capstone2.png"/>
+		</div>
+		<div class="col-sm-6 port-image">
+			<img src="images/capstone1.png"/>
+		</div>
+	</div>
+<a href="https://github.com/GinaRavuth/capstone-proj" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+	<div id="capstone-info" class="col-sm-12">
+		<h2 style="text-align: center;">what it includes</h2>
+		<p class="p-width">Since there is a checkout system, an administrator dashboard will also be apart of this project. This dashboard will only be accessed by administrators and will allow them to approve checkouts and returns made by students. </p>
+	</div>
+	<div id="capstone-info" class="col-sm-12">
+		<h2 style="text-align: center;">my role</h2>
+		<p class="p-width">For this project, each member of the group has a role. My roles include Front-End Developer, Designer, and Project Manager for Ordino. As Front-End Developer, I worked with HTML/HTML5 + CSS and the Bootstrap framework to develop the front end aspect of the system. As Designer, I wireframed how the system was going to look and tested out colors to see what would fit. Last, as Project Manager, I made sure our group had everything together, reminded us of deadlines, and made sure we were on task. </p>
+	</div>
+<br><br>
+<a href="test.html" class="link button-style" style="display: table;margin:auto;">Return to Portfolio Work</a>
+</div>
+<script>
+$(document).ready(function() {
+
+$('body').css('display', 'none');
+
+$('body').fadeIn(1000);
+
+
+
+$('.link').click(function(event) {
+
+event.preventDefault();
+
+newLocation = this.href;
+
+$('body').fadeOut(1000, newpage);
+
+});
+
+
+
+function newpage() {
+
+window.location = newLocation;
+
+}
+
+});
+
+</script>
+</body>
+</html>
