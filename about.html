@@ -103,30 +103,31 @@
             </div>
         </div>
     </section>
-    <section class="bg-primary" id="portfolio">
+    <section class="bg-burgandy" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
                     
 					 <h2>work</h2>
-					 <hr>
+					 <hr class="light">
 					 <p class="text-faded">Check out some of my projects. </p>
 					<div class="col-sm-3 work center" id="ordino" data-toggle="modal" data-target="#myModal">
 						<h1 class="big">Ordino</h1>
 						
 						<p class="p-desc">A hardware inventory system for GA Southnern's IT dept.</p>
 					</div>   
-					<div class="col-sm-3 work center" id="gsu">
+					<div class="col-sm-3 work center" id="gsu"data-toggle="modal" data-target="#modalGSU">
 						<h1 class="big">GSU</h1>
 						
 						<p class="p-desc">Development for Georgia Southern University website</p>
+						
 					</div>  
  					<div class="col-sm-3 work center" id="rsi" data-toggle="modal" data-target="#modalRSI">
 						<h1 class="big">Hackathon</h1>
 						
 						<p class="p-desc">A RSI competition consisting of developing a website within 4 hours.</p>
 					</div>     
- 					<div class="col-sm-3 work center" id="delights">
+ 					<div class="col-sm-3 work center" id="delights"data-toggle="modal" data-target="#modalDelights">
 						<h1 class="big center">Daily Delights</h1>
 						
 						<p class="p-desc">A project about a vegetarian-friendly restaraunt for my IT 3132 course.</p>
@@ -134,7 +135,7 @@
 
                 </div>
 			</div>
-			<a  class="btn btn-new"href="Resume_GinaRavuth.pdf" target="_blank">DOWNLOAD RESUME</a>
+			<a  class="btn btn-download"href="Resume_GinaRavuth.pdf" target="_blank">DOWNLOAD RESUME</a>
         </div>
     </section>
      <section class="bg-primary" id="contact">
@@ -188,15 +189,67 @@
         <h4 class="modal-title" id="myModalLabel">Rural Sourcing Inc. Hackathon Competition</h4>
       </div>
       <div class="modal-body">
-Rural Sourcing, Inc. (RSI) is the leader in domestic sourcing, a cost-effective alternative to offshoring for technology development and the ongoing support and maintenance for critical business applications (as said on company overview on facebook). RSI is located in Augusta, GA and holds a hackathon competition every year in October. The competition requires a group of students or individual to develop a website or system for RSI's company of choice within a 4 hour time period. RSI provides all content for the competition. The rest is up to the groups to develop. Universities from all over South Georgia were able to compete. <br>
-		
-		<br>
-		<img class="img-responsive" src="images/rsi1.png" alt="rsi"/><br>
+<p>Rural Sourcing, Inc. (RSI) is the leader in domestic sourcing, a cost-effective alternative to offshoring for technology development and the ongoing support and maintenance for critical business applications (as said on company overview on facebook). RSI is located in Augusta, GA and holds a hackathon competition every year in October. The competition requires a group of students or individual to develop a website or system for RSI's company of choice within a 4 hour time period. RSI provides all content for the competition. The rest is up to the groups to develop. Universities from all over South Georgia were able to compete. </p><br />
 		<p>My group included me, my friend Travis Crowe and my sister Renita Ravuth. Travis and I had the role of front-end developers while Renita was designer. We managed to finish five pages within the four hour time period. Let's just say those four hours were intense. We focused on making sure our site functioned properly and the design was intriguing. We used HTML/CSS and the Bootstrap framework. At the end of the four hours, each group was to present their developed site.
 
 My group placed 3rd place out of 12 and were one of Georgia Southern's first group to place.</p>
-		<img class="img-responsive" src="images/rsi2.png" alt="rsi"/><br>
+		<br>
+		<img class="img-responsive" src="images/rsi1.png" alt="rsi"/>
+		<img class="img-responsive" src="images/rsi2.png" alt="rsi"/>
+<br>
 		<a class="btn-new" href="https://github.com/GinaRavuth/hackathon" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalDelights" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">IT 3132: Daily Delights</h4>
+      </div>
+      <div class="modal-body">
+		<p>For my IT 3132 course, a group and I worked on a project that dealt with a "fake" company named "Daily Delights". This company wanted a new and refreshing website. 
+		<br>
+		Here, I had the role as Information Architect and one of the web developers. I designed the wireframes, sitemaps and developed code for the front end. Tools and languages used were Dreamweaver, Notepad ++, CSS media queries, HTML, and JavaScript.</p> 
+		<br>
+		<div class="row">
+		<img class="img-responsive col-sm-6" src="images/web1.png" alt="delights"/>
+		<img class="img-responsive col-sm-6" src="images/web2.png" alt="daily delights"/>
+		
+		</div>
+		<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalGSU" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Georgia Southern University Website</h4>
+      </div>
+      <div class="modal-body">
+		Currently, I work for the Georgia Southern University website. I update old pages to new pages which requires adding and switching new code. Since some pages are so outdated, the user experience isn't all that great. I also make sure the pages are user friendly to give an overall good user experience. So far I've worked on GSU's Transfer Equivalency page, ADP Lookup, and currently Forwading Address page. 
+		Within this job, I use HTML/CSS, Bootstrap and touch lightly on PHP and Javascript. 
+		<br>
+		Below, are the before and after of the Transfer Equivalency pages on GSU's website. Before: 2006 - Now: 2016
+<br><br>
+		<h4 style="text-align:center">BEFORE</h4>
+		<img class="img-responsive center" src="images/before_transfer.png" alt="gsu"/>
+		<img class="img-responsive" src="images/before_transfer4.png" alt="gsu table "/>
+		<h4 style="text-align:center">AFTER</h4>
+<br>
+		<img class="img-responsive center" src="images/after_transfer.png" alt="gsu"/><br>
+		<img class="img-responsive" src="images/after_transfer3.png" alt="gsu table "/>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
