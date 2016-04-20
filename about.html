@@ -22,7 +22,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-
+	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,10 +52,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">About Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">My Work</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -106,16 +107,103 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
-                    <hr class="light">
+                    
 					 <h2>work</h2>
+					 <hr>
+					 <p class="text-faded">Check out some of my projects. </p>
+					<div class="col-sm-3 work center" id="ordino" data-toggle="modal" data-target="#myModal">
+						<h1 class="big">Ordino</h1>
+						
+						<p class="p-desc">A hardware inventory system for GA Southnern's IT dept.</p>
+					</div>   
+					<div class="col-sm-3 work center" id="gsu">
+						<h1 class="big">GSU</h1>
+						
+						<p class="p-desc">Development for Georgia Southern University website</p>
+					</div>  
+ 					<div class="col-sm-3 work center" id="rsi" data-toggle="modal" data-target="#modalRSI">
+						<h1 class="big">Hackathon</h1>
+						
+						<p class="p-desc">A RSI competition consisting of developing a website within 4 hours.</p>
+					</div>     
+ 					<div class="col-sm-3 work center" id="delights">
+						<h1 class="big center">Daily Delights</h1>
+						
+						<p class="p-desc">A project about a vegetarian-friendly restaraunt for my IT 3132 course.</p>
+					</div> 					
+
+                </div>
+			</div>
+			<a  class="btn btn-new"href="Resume_GinaRavuth.pdf" target="_blank">DOWNLOAD RESUME</a>
+        </div>
+    </section>
+     <section class="bg-primary" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    
+					 <h2>let's get in touch</h2>
 				<hr>
-                    <p class="text-faded">Hey there. My name is Gina Ravuth and I'm currently a senior at Georgia Southern University. My major is Information Technology with a concentration in web design and a minor in Computer Science. My main focus is in front-end development at the moment but I'm also interested in learning more about Human-Computer Interaction. Currently, I'm a tutor for GSU's IT department (web concentration) and a front-end developer for GSU's university website. As a tutor, I'm able to help others understand and learn code. As a front-end developer, I'm able to provide new and better user expreiences.  </p>                  
+                    <p class="text-faded">Ask me about my current project! <br> For inquires, please email me drectly at <span class="email">ginaravuth@gmail.com. </p>                  
                 </div>
 			</div>
 			
         </div>
     </section>
- 
+<footer>
+	<div class="col-sm-12 center">
+		&copy; 2016 Copyright Gina Ravuth
+	</div>
+</footer>
+
+<!-- Modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">IT Capstone Final Project: Ordino</h4>
+      </div>
+      <div class="modal-body">
+        For my Capstone project, my group and I developed a hardware inventory system for the IT department.
+		This inventory system is focused on one room, 2208, in the Information Technology building. The system includes all the hardware in room 2208 such as TVs, monitors, workstations, routers and much more. Students will be able to see the status, description, type and location of items. In this case, a checkout process will be used to checkout and return hardware items. We called this system Ordino, which is latin for "order".<br>
+		
+		<br>
+		<img class="img-responsive" src="images/capstone1.png" alt="capstone project Ordino"/><br>
+		<p>My roles include Front-End Developer, Designer, and Project Manager for Ordino. As Front-End Developer, I worked with HTML/HTML5 + CSS and the Bootstrap framework to develop the front end aspect of the system. As Designer, I wireframed how the system was going to look and tested out colors to see what would fit. Last, as Project Manager, I made sure our group had everything together, reminded us of deadlines, and made sure we were on task.</p>
+		<img class="img-responsive" src="images/capstone2.png" alt="capstone project Ordino"/><br>
+		<a class="btn-new" href="https://github.com/GinaRavuth/capstone-proj" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalRSI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Rural Sourcing Inc. Hackathon Competition</h4>
+      </div>
+      <div class="modal-body">
+Rural Sourcing, Inc. (RSI) is the leader in domestic sourcing, a cost-effective alternative to offshoring for technology development and the ongoing support and maintenance for critical business applications (as said on company overview on facebook). RSI is located in Augusta, GA and holds a hackathon competition every year in October. The competition requires a group of students or individual to develop a website or system for RSI's company of choice within a 4 hour time period. RSI provides all content for the competition. The rest is up to the groups to develop. Universities from all over South Georgia were able to compete. <br>
+		
+		<br>
+		<img class="img-responsive" src="images/rsi1.png" alt="rsi"/><br>
+		<p>My group included me, my friend Travis Crowe and my sister Renita Ravuth. Travis and I had the role of front-end developers while Renita was designer. We managed to finish five pages within the four hour time period. Let's just say those four hours were intense. We focused on making sure our site functioned properly and the design was intriguing. We used HTML/CSS and the Bootstrap framework. At the end of the four hours, each group was to present their developed site.
+
+My group placed 3rd place out of 12 and were one of Georgia Southern's first group to place.</p>
+		<img class="img-responsive" src="images/rsi2.png" alt="rsi"/><br>
+		<a class="btn-new" href="https://github.com/GinaRavuth/hackathon" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
