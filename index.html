@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
 	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,10 +52,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="about.html">About</a>
+                        <a class="page-scroll" href="#about">About Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">My Work</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -65,10 +66,9 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <header>
         <div class="header-content">
-            <div class="header-content-inner">
+            <div class="header-content-inner"><br>
                 <h1>GINA RAVUTH</h1>
                 <hr>
                 <h4 class="margin-bottom">An aspiring web designer and developer.</h4>
@@ -76,233 +76,196 @@
             </div>
         </div>
     </header>
-<!--
+	
+
+	
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">learn about me</h2>
+                <div class="col-sm-12 text-center">
                     <hr class="light">
-                    <p class="text-faded">Hey there. My name is Gina Ravuth and I'm currently a senior at Georgia Southern University. My major is Information Technology with a concentration in web design and a minor in Computer Science. My main focus is in front-end development at the moment but I'm also interested in learning more about Human-Computer Interaction. Currently, I'm a tutor for GSU's IT department (web concentration) and a front-end developer for GSU's university website. As a tutor, I'm able to help others understand and learn code. As a front-end developer, I'm able to provide new and better user expreiences.  </p>
+					                <h2>learn about me</h2>
+				<hr>
+                    <p class="text-faded">Hey there. My name is Gina Ravuth and I'm currently a senior at Georgia Southern University. My major is Information Technology with a concentration in web design and a minor in Computer Science. My main focus is in front-end development at the moment but I'm also interested in learning more about Human-Computer Interaction. Currently, I'm a tutor for GSU's IT department (web concentration) and a front-end developer for GSU's university website. As a tutor, I'm able to help others understand and learn code. As a front-end developer, I'm able to provide new and better experiences for users.  </p> 
+					<p>This website is here not only to showcase my work but a place to express my interests also. </p>
+					<h4>Things I enjoy + like: </h4> music, chill, travel + exploring, outdoors, exercise, food, and cats
+                </div>
+			</div>
+			<br><br>
+			<div class="row" id="about-photos">
+				<div class="col-sm-4">
+					<img src="images/gina-bw-3.jpg"/>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/gina-bw-5.jpg"/>
+				</div>
+				<div class="col-sm-4">
+					<img src="images/gina-bw-1-copy.jpg"/>
+				</div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-burgandy" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
                     
-                </div>
-            </div>
-        </div>
-    </section>
-    <aside class="bg-primary">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>my work</h2>
-            </div>
-        </div>
-    </aside>	
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="it-capstone.html" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" width="650" height="350" alt="Ordino">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Capstone Project
-                                </div>
-                                <div class="project-name">
-                                    ORDINO
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Web Competition
-                                </div>
-                                <div class="project-name">
-                                    RSI HACKATHON
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    WEB PROJECT
-                                </div>
-                                <div class="project-name">
-									FINAL PROJECT
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+					 <h2>work</h2>
+					 <hr class="light">
+					 <p class="text-faded">Check out some of my projects. </p>
+					<div class="col-sm-3 work center" id="ordino" data-toggle="modal" data-target="#myModal">
+						<h1 class="big">Ordino</h1>
+						
+						<p class="p-desc">A hardware inventory system for GA Southnern's IT dept.</p>
+					</div>   
+					<div class="col-sm-3 work center" id="gsu"data-toggle="modal" data-target="#modalGSU">
+						<h1 class="big">GSU</h1>
+						
+						<p class="p-desc">Development for Georgia Southern University website</p>
+						
+					</div>  
+ 					<div class="col-sm-3 work center" id="rsi" data-toggle="modal" data-target="#modalRSI">
+						<h1 class="big">Hackathon</h1>
+						
+						<p class="p-desc">A RSI competition consisting of developing a website within 4 hours.</p>
+					</div>     
+ 					<div class="col-sm-3 work center" id="delights"data-toggle="modal" data-target="#modalDelights">
+						<h1 class="big center">Daily Delights</h1>
+						
+						<p class="p-desc">A project about a vegetarian-friendly restaraunt for my IT 3132 course.</p>
+					</div> 					
 
-            </div>
+                </div>
+			</div>
+			<a  class="btn btn-download"href="Resume_GinaRavuth.pdf" target="_blank">DOWNLOAD MY RESUME</a>
         </div>
     </section>
-  <!--  <section id="services">
+     <section class="bg-primary" id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
+                <div class="col-sm-12 text-center">
+                    
+					 <h2>let's get in touch</h2>
+				<hr>
+                    <p class="text-faded">Ask me about my current project! <br> For inquires, please email me directly at <b>ginaravuth@gmail.com</b> </p> 
+<br>
+				<div id="icons">
+				<a href="https://play.spotify.com/user/1221207721" target="_blank" id="icon"><img src="icons/spotify.png" /></a>
+				<a href="https://github.com/GinaRavuth" target="_blank" id="icon"><img src="icons/github.png" ></a>
+				<a href="https://soundcloud.com/gina-ravuth" target="_blank" id="icon"><img src="icons/soundcloud.png" /></a>
+				<a href="https://www.linkedin.com/in/regina-ravuth-a4a90678" target="_blank" id="icon"><img src="icons/linked.png" /></a>
+				</div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>   -->
-	<!--
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>my work</h2>
-            </div>
-        </div>
-    </aside>
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
+			</div>
+			
         </div>
     </section>
-	-->
-<!--
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
--->
+<footer>
+	<div class="col-sm-12 center">
+		&copy; 2016 Copyright Gina Ravuth
+	</div>
+</footer>
 
-<script>
-$(document).ready(function() {
+<!-- Modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">IT Capstone Final Project: Ordino</h4>
+      </div>
+      <div class="modal-body">
+        For my Capstone project, my group and I developed a hardware inventory system for the IT department.
+		This inventory system is focused on one room, 2208, in the Information Technology building. The system includes all the hardware in room 2208 such as TVs, monitors, workstations, routers and much more. Students will be able to see the status, description, type and location of items. In this case, a checkout process will be used to checkout and return hardware items. We called this system Ordino, which is latin for "order".<br>
+		
+		<br>
+		<img class="img-responsive" src="images/capstone1.png" alt="capstone project Ordino"/><br>
+		<p>My roles include Front-End Developer, Designer, and Project Manager for Ordino. As Front-End Developer, I worked with HTML/HTML5 + CSS and the Bootstrap framework to develop the front end aspect of the system. As Designer, I wireframed how the system was going to look and tested out colors to see what would fit. Last, as Project Manager, I made sure our group had everything together, reminded us of deadlines, and made sure we were on task.</p>
+		<img class="img-responsive" src="images/capstone2.png" alt="capstone project Ordino"/><br>
+		<a class="btn-new" href="https://github.com/GinaRavuth/capstone-proj" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalRSI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Rural Sourcing Inc. Hackathon Competition</h4>
+      </div>
+      <div class="modal-body">
+<p>Rural Sourcing, Inc. (RSI) is the leader in domestic sourcing, a cost-effective alternative to offshoring for technology development and the ongoing support and maintenance for critical business applications (as said on company overview on facebook). RSI is located in Augusta, GA and holds a hackathon competition every year in October. The competition requires a group of students or individual to develop a website or system for RSI's company of choice within a 4 hour time period. RSI provides all content for the competition. The rest is up to the groups to develop. Universities from all over South Georgia were able to compete. </p><br />
+		<p>My group included me, my friend Travis Crowe and my sister Renita Ravuth. Travis and I had the role of front-end developers while Renita was designer. We managed to finish five pages within the four hour time period. Let's just say those four hours were intense. We focused on making sure our site functioned properly and the design was intriguing. We used HTML/CSS and the Bootstrap framework. At the end of the four hours, each group was to present their developed site.
 
-$('body').css('display', 'none');
-
-$('body').fadeIn(1000);
-
-
-
-$('.link').click(function(event) {
-
-event.preventDefault();
-
-newLocation = this.href;
-
-$('body').fadeOut(1000, newpage);
-
-});
-
-
-
-function newpage() {
-
-window.location = newLocation;
-
-}
-
-});
-
-</script>
+My group placed 3rd place out of 12 and were one of Georgia Southern's first group to place.</p>
+		<br>
+		<img class="img-responsive" src="images/rsi1.png" alt="rsi"/>
+		<img class="img-responsive" src="images/rsi2.png" alt="rsi"/>
+<br>
+		<a class="btn-new" href="https://github.com/GinaRavuth/hackathon" target="_blank" class="link button-style" style="display: table;margin:auto;">View code on GitHub</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalDelights" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">IT 3132: Daily Delights</h4>
+      </div>
+      <div class="modal-body">
+		<p>For my IT 3132 course, a group and I worked on a project that dealt with a "fake" company named "Daily Delights". This company wanted a new and refreshing website. 
+		<br>
+		Here, I had the role as Information Architect and one of the web developers. I designed the wireframes, sitemaps and developed code for the front end. Tools and languages used were Dreamweaver, Notepad ++, CSS media queries, HTML, and JavaScript.</p> 
+		<br>
+		<div class="row">
+		<img class="img-responsive col-sm-6" src="images/web1.png" alt="delights"/>
+		<img class="img-responsive col-sm-6" src="images/web2.png" alt="daily delights"/>
+		
+		</div>
+		<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalGSU" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Georgia Southern University Website</h4>
+      </div>
+      <div class="modal-body">
+		Currently, I work for the Georgia Southern University website. I update old pages to new pages which requires adding and switching new code. Since some pages are so outdated, the user experience isn't all that great. I also make sure the pages are user friendly to give an overall good user experience. So far I've worked on GSU's Transfer Equivalency page, ADP Lookup, and currently Forwading Address page. 
+		Within this job, I use HTML/CSS, Bootstrap and touch lightly on PHP and Javascript. 
+		<br>
+		Below, are the before and after of the Transfer Equivalency pages on GSU's website. Before: 2006 - Now: 2016
+<br><br>
+		<h4 style="text-align:center">BEFORE</h4>
+		<img class="img-responsive center" src="images/before_transfer.png" alt="gsu"/>
+		<img class="img-responsive" src="images/before_transfer4.png" alt="gsu table "/>
+		<h4 style="text-align:center">AFTER</h4>
+<br>
+		<img class="img-responsive center" src="images/after_transfer.png" alt="gsu"/><br>
+		<img class="img-responsive" src="images/after_transfer3.png" alt="gsu table "/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
